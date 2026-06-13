@@ -1,0 +1,23 @@
+# Workflow name
+name: First workflow
+
+# At which time it will run 
+on: workflow_dispatch
+
+# What it will run 
+jobs:
+
+  # Can have multiple jobs 
+  first-job:
+
+    # On which server will it run
+    runs-on: ubuntu-latest
+
+    # Which steps will it execute
+    steps:
+      - name: Print hello world
+        run: echo "Hello World!"
+      - name: Pring Starting point
+        run: echo "GitHub actions."
+  
+  
